@@ -1,11 +1,15 @@
-amor: 3,1
-casa: 1,1 2,4 3,1
-casar: 3,2
-comigo: 3,2
-engracado: 1,1
-facar: 3,1
-morar: 2,1 3,1
-nao: 1,2 2,1
-tamber: 2,1
-ter: 1,2
-teto: 1,1
+(amor: Doc c, 1)
+(aparecer: Doc c, 1)
+(casa: Doc a, 1, Doc b, 4, Doc c, 1)
+(casar: Doc c, 2)
+(comigo: Doc c, 2)
+(documento: Doc c, 2)
+(engracado: Doc a, 1)
+(faca: Doc c, 1)
+(morar: Doc b, 1, Doc c, 1)
+(nao: Doc a, 2, Doc b, 1)
+(quantidade: Doc c, 1)
+(tambem: Doc b, 1)
+(ter: Doc a, 2)
+(termo: Doc c, 2)
+(teto: Doc a, 1)
