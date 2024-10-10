@@ -9,8 +9,6 @@ query_path = sys.argv[2]
 
 inverted_index = defaultdict(lambda: defaultdict(int))
 
-doc_names = ['Doc a', 'Doc b', 'Doc c']
-
 with open(base_path, 'r') as file:
     file_paths = file.readlines()
     file_paths = [path.strip() for path in file_paths]
@@ -27,7 +25,7 @@ with open(base_path, 'r') as file:
 
 with open('indice.txt', 'w') as index_file:
     for lemma in sorted(inverted_index.keys()):
-        occurrences = ", ".join([f"{doc_names[doc_id]}, {freq}" for doc_id, freq in inverted_index[lemma].items()])
+        occurrences = ", ".join([f"{doc_id}, {freq}" for doc_id, freq in inverted_index[lemma].items()])
         index_entry = f"({lemma}: {occurrences})\n"
         index_file.write(index_entry)
 
