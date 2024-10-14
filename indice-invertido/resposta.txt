@@ -1,3 +1,4 @@
+3
 a.txt
 b.txt
 c.txt
