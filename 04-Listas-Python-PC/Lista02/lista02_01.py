@@ -2,7 +2,7 @@ def calcula_area_quadrado(lado_do_quadrado):
     """
     Calcula a área de um quadrado com base no comprimento de seu lado.
 
-    Params:
+    Args:
     lado_do_quadrado (int): Comprimento do lado.
 
     Return:

@@ -2,7 +2,7 @@ def analisa_numero(numero):
     """
     Analisa se um número inteiro é par ou ímpar, desde que não seja negativo.
 
-    Params:
+    Args:
     numero (int): Número inteiro passado pelo usuário.
 
     Return:

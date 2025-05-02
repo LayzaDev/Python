@@ -2,7 +2,7 @@ def busca_pessoa_mais_velha(lista_pessoas: list) -> str:
     """
     Retorna o nome da pessoa mais velha da lista de pessoas.
 
-    Params:
+    Args:
     lista_pessoas (list): Lista de tuplas, onde cada tupla contém (nome: str, idade: int).
 
     Return:
@@ -15,7 +15,7 @@ def busca_pessoa_mais_nova(lista_pessoas: list) -> str:
     """
     Retorna o nome da pessoa mais nova da lista de pessoas.
 
-    Params:
+    Args:
     lista_pessoas (list): Lista de tuplas, onde cada tupla contém (nome: str, idade: int).
 
     Return:
@@ -28,7 +28,7 @@ def calcula_media_das_idades(lista_pessoas: list) -> float:
     """
     Calcula a média das idades da lista de pessoas.
 
-    Params:
+    Args:
     lista_pessoas (list): Lista de tuplas (nome: str, idade: int).
 
     Return:

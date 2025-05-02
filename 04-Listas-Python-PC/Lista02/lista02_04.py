@@ -2,7 +2,7 @@ def calcula_valor_final_a_pagar(valor_emprestimo: float, taxa: float, tempo: flo
     """
     Calcula o valor final a ser pago de um empréstimo.
 
-    Params:
+    Args:
     valor_emprestimo (float): Valor inicial do empréstimo.
     taxa (float): Taxa de juros ao mês (em porcentagem).
     tempo (float): Tempo de pagamento em meses.
