@@ -1,19 +1,23 @@
+'''
+5. Dada uma equação de segundo grau: 
+a * x^2 + b * x + c
+onde o usuário informa os valores de a, b e c; calcule suas raízes utilizando a fórmula de
+Bhaskara.
+'''
+
 import math
 
-"""
-    Calcula as raízes de uma equação de segundo grau com a fórmula de Bhaskara.
-"""
 def calcular_discriminante(a: float, b: float, c: float) -> float:
     """
-        Calcula o discriminante (delta) de uma equação do 2º grau.
+    Calcula o discriminante (delta) de uma equação do 2º grau.
 
-        Args:
-            a (float): Coeficiente quadrático.
-            b (float): Coeficiente linear.
-            c (float): Termo constante.
+    Args:
+        a (float): Coeficiente quadrático.
+        b (float): Coeficiente linear.
+        c (float): Termo constante.
 
-        Returns:
-            float: O valor de delta.
+    Returns:
+        float: O valor de delta.
     """
     if a == 0:
         raise ValueError("\nO coeficiente 'a' deve ser diferente de 0.\n")
@@ -23,15 +27,15 @@ def calcular_discriminante(a: float, b: float, c: float) -> float:
 
 def calcular_raizes(a: float, b: float, c: float):
     """
-        Calcula as raízes reais de uma equação do 2º grau, se existirem.
+    Calcula as raízes reais de uma equação do 2º grau, se existirem.
 
-        Args:
-            a (float): Coeficiente quadrático.
-            b (float): Coeficiente linear.
-            c (float): Termo constante.
+    Args:
+        a (float): Coeficiente quadrático.
+        b (float): Coeficiente linear.
+        c (float): Termo constante.
 
-        Returns:
-            tuple: Uma tupla contendo as duas raízes reais.
+    Returns:
+        tuple: Uma tupla contendo as duas raízes reais.
     """
     delta = calcular_discriminante(a, b, c)
 

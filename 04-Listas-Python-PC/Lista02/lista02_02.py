@@ -1,3 +1,7 @@
+'''
+2. Crie um script que leia um número inteiro. Se o número for positivo, irá determinar se o número é par ou ímpar; caso contrário, informará que o número é inválido.
+'''
+
 def analisa_numero(numero):
     """
     Analisa se um número inteiro é par ou ímpar, desde que não seja negativo.

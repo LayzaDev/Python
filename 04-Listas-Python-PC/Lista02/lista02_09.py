@@ -1,4 +1,25 @@
-def buscar_telefones(prefixo: str, primeiro_sufixo: str, ultimo_sufixo: str):
+'''
+9. Crie um script que liste todos os números dos telefones, ao serem informados, o prefixo e os sufixos. Por exemplo, suponha que o prefixo seja “3232” e que o primeiro prefixo seja “0001” e o último sufixo seja “0005”; logo o programa irá imprimir:
+Seus números de telefone são:
+● 3232-0001
+●​ 3232-0002
+● 3232-0003
+●​ 3232-0004
+● 3232-0005
+'''
+
+def buscar_telefones(prefixo: str, primeiro_sufixo: str, ultimo_sufixo: str) -> None:
+    """
+    Gera e exibe uma lista de números de telefone com base em um prefixo e um intervalo de sufixos.
+
+    Args:
+    prefixo (str): Parte inicial do número de telefone (ex: "3232").
+    primeiro_sufixo (str): Primeiro sufixo do intervalo (ex: "0001").
+    ultimo_sufixo (str): Último sufixo do intervalo (ex: "0005").
+
+    Return:
+    None
+    """
     inicio = int(primeiro_sufixo)
     fim = int(ultimo_sufixo)
 

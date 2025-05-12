@@ -1,32 +1,40 @@
-"""
-Manipulador de Listas Numéricas
-
-O script permite ao usuário inserir 10 números inteiros positivos, e realiza as seguintes operações:
-
-1. Ordena a lista dos valores lidos.
-2. Conta quantas vezes cada número aparece.
-3. identifica o número, e indica se é par e se é primo
-
-Funções:
-- ordenar_lista(lista): Retorna a lista de entrada ordenada em ordem crescente.
-- contagem_de_cada_item(lista): Retorna uma string formatada com a contagem de ocorrências de cada item da lista.
-- eh_primo(numero): Verifica se um número inteiro é primo.
-- classifica_numeros(lista): Retorna uma string classificando cada número como par/ímpar e primo/não primo.
-
-Ao executar o script, o usuário é solicitado a inserir 10 números inteiros positivos. Em seguida, são exibidos:
-- A lista original;
-- A lista ordenada;
-- A contagem de cada item da lista;
-- A classificação de cada número quanto à paridade e primalidade.
-"""
-
-from collections import Counter
+'''
+7. Crie um script que leia 10 números inteiros positivos e que irá apresentar:
+●​ A lista dos valores lidos de forma ordenada.
+●​ A contagem de cada item. Por exemplo, se o usuário informou [1,1,1,1,2, 3], aqui apresentamos:
+○​ 1: 4x.
+○​ 2: 1x.
+○​ 3: 1x.
+●​ Uma saída identificando o número, se o número é par e se é primo. Isto será feito separando por vírgulas: Por exemplo, se informou [1,2,3,6]. Iremos apresentar aqui:
+○​ 1,ímpar,não é primo
+○​ 2,par,é primo
+○​ 3,ímpar,é primo
+○​ 6,par,não é primo
+'''
 
 def ordenar_lista(lista: list) -> list:
+    """
+    Retorna a lista ordenada em ordem crescente.
+
+    Args:
+    lista (list): Lista de números inteiros.
+
+    Return:
+    list: Lista ordenada.
+    """
     lista_ordenada = sorted(lista)
     return lista_ordenada
         
 def contagem_de_cada_item(lista: list):
+    """
+    Conta a frequência de cada número na lista e formata os resultados.
+
+    Args:
+    lista (list): Lista de números inteiros.
+
+    Return:
+    str: Contagem de ocorrências de cada item da lista fornatados linha a linha.
+    """
     contagem = {}
     lista_2 = []
     for item in lista:
@@ -39,6 +47,15 @@ def contagem_de_cada_item(lista: list):
     return "\n".join(lista_2)
 
 def eh_primo(numero: int) -> bool:
+    """
+    Verifica se o número informado é primo.
+
+    Args:
+    numero (int): Número inteiro a ser verificado.
+
+    Return:
+    bool: True se o número for primo, False caso contrário.
+    """
     if numero < 2:
         return False
     for i in range(2, numero):
@@ -47,6 +64,15 @@ def eh_primo(numero: int) -> bool:
     return True
     
 def classifica_numeros(lista: list) -> list:
+    """
+    Classifica cada número da lista como par/ímpar e primo/não primo.
+
+    Args:
+    lista (list): Lista de números inteiros.
+
+    Return:
+    str: Classificação de cada número, linha por linha.
+    """
     lista_aux = []
     for numero in lista:
         paridade = "par" if numero % 2 == 0 else "ímpar"

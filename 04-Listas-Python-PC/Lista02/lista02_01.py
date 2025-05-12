@@ -1,3 +1,7 @@
+'''
+1. Crie um script que irá calcular a área de um quadrado. Peça para a pessoa informar a medida numérica de um lado do quadrado. E depois informe-lhe o valor da área do quadrado.
+'''
+
 def calcula_area_quadrado(lado_do_quadrado):
     """
     Calcula a área de um quadrado com base no comprimento de seu lado.

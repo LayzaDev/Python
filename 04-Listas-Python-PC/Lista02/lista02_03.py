@@ -1,3 +1,10 @@
+'''
+3. Neste script, você irá coletar o nome e a idade de três pessoas e informar ao final:
+●​ O nome da pessoa mais velha.
+●​ O nome da pessoa mais nova.
+●​ A média das idades.
+'''
+
 def busca_pessoa_mais_velha(lista_pessoas: list) -> str:    
     """
     Retorna o nome da pessoa mais velha da lista de pessoas.

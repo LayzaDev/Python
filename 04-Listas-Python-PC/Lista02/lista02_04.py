@@ -1,3 +1,11 @@
+'''
+4. Estou tentando entender os juros do meu banco. Para isto, ele me informou esta fórmula: valorFinal = valorEmprestimo + (valorEmprestimo * taxa * tempo) onde que:
+●​ valorEmprestimo: É o valor que pegarei emprestado.
+●​ taxa: É o valor da taxa por mês. Por exemplo: se for 4% ao mês, o valor será 0.04.
+●​ tempo: Quantidade de meses que irei pagar o empréstimo.
+Crie um script que colete cada um destes valores para calcular o valor final que estarei pagando ao banco.
+'''
+
 def calcula_valor_final_a_pagar(valor_emprestimo: float, taxa: float, tempo: float) -> float:
     """
     Calcula o valor final a ser pago de um empréstimo.
